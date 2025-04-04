@@ -13,6 +13,8 @@
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "react-jsx",
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
 
     "strict": false,
     "paths": {
@@ -20,6 +22,6 @@
     }
   },
   "include": ["src"],
-  "exclude": ["src/tempobook"],
+  "exclude": ["src/tempobook", "node_modules"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
